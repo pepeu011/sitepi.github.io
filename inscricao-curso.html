@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição em Cursos - Gamemaster Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo/logotipo.png" alt="Logo Gamemaster Academy" class="logo">
+            <h1>Gamemaster Academy</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="courses-gallery">
+        <h2>Nossos Cursos Disponíveis</h2>
+        <div class="courses-container">
+            <div class="course-item">
+                <img src="cs2/cs2.png" alt="Curso de CS2">
+                <h3><a href="curso-cs2.html">Curso de CS2</a></h3>
+                <p>Aprenda estratégias e técnicas para se tornar um jogador profissional em CS2.</p>
+            </div>
+            <div class="course-item">
+                <img src="lol/lol.png" alt="Curso de LoL">
+                <h3><a href="curso-lol.html">Curso de LoL</a></h3>
+                <p>Domine o League of Legends com estratégias de jogo e técnicas avançadas.</p>
+            </div>
+            <div class="course-item">
+                <img src="valorant/valorant.png" alt="Curso de Valorant">
+                <h3><a href="curso-valorant.html">Curso de Valorant</a></h3>
+                <p>Melhore suas habilidades em Valorant com táticas e dicas de especialistas.</p>
+            </div>
+            <div class="course-item">
+                <img src="fortnite/fortnite.png" alt="Curso de Fortnite">
+                <h3><a href="curso-fortnite.html">Curso de Fortnite</a></h3>
+                <p>Aprimore suas habilidades em Fortnite com estratégias de construção e combate.</p>
+            </div>
+            <div class="course-item">
+                <img src="apexlegends/apexlegends.png" alt="Curso de Apex Legends">
+                <h3><a href="curso-apex-legends.html">Curso de Apex Legends</a></h3>
+                <p>Domine Apex Legends com técnicas de movimentação e trabalho em equipe.</p>
+            </div>
+            <div class="course-item">
+                <img src="minecraft/minecraft.png" alt="Curso de Minecraft">
+                <h3><a href="curso-minecraft.html">Curso de Minecraft</a></h3>
+                <p>Explore o mundo de Minecraft com construção, sobrevivência e criação de mods.</p>
+            </div>
+            <div class="course-item">
+                <img src="overwatch/overwatch.png" alt="Curso de Overwatch">
+                <h3><a href="curso-overwatch.html">Curso de Overwatch</a></h3>
+                <p>Aprenda a dominar heróis e estratégias em Overwatch com nossos especialistas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-signup">
+        <h2>Inscreva-se em Nossos Cursos</h2>
+        <p>Selecione um dos cursos disponíveis abaixo e preencha o formulário para fazer sua inscrição.</p>
+
+        <form action="processar-inscricao.php" method="post" class="signup-form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="course">Curso:</label>
+            <select id="course" name="course" required>
+                <option value="">Selecione um curso</option>
+                <option value="CS2">Curso de CS2</option>
+                <option value="LoL">Curso de LoL</option>
+                <option value="Valorant">Curso de Valorant</option>
+                <option value="Fortnite">Curso de Fortnite</option>
+                <option value="Apex Legends">Curso de Apex Legends</option>
+                <option value="Minecraft">Curso de Minecraft</option>
+                <option value="Overwatch">Curso de Overwatch</option>
+            </select>
+
+            <label for="comments">Comentários:</label>
+            <textarea id="comments" name="comments" placeholder="Escreva alguma observação (opcional)"></textarea>
+
+            <button type="submit" class="btn-signup">Enviar Inscrição</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gamemaster Academy. Todos os direitos reservados.</p>
+        <p><a href="TermosDeUso.html">Termos de Uso</a> | <a href="PoliticaDePrivacidade.html">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>

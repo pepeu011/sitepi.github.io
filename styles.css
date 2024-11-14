@@ -1,0 +1,983 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #0e0e0e;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    height: 120px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #b19cd9;
+    font-weight: 700;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #b19cd9;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #9932cc;
+}
+
+.hero {
+    background: linear-gradient(45deg, #800080, #4b0082);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-weight: 500;
+}
+
+.courses {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.course-card h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #b19cd9;
+}
+
+.course-card p {
+    font-size: 1em;
+    color: #cccccc;
+}
+
+/* Botão principal */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b19cd9;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #9932cc;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #2e2e2e;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #b19cd9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Botão "Ver Curso" nos cards de curso */
+.btn-course {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9932cc;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.btn-course:hover {
+    background-color: #8a2be2;
+    transform: scale(1.05);
+}
+
+.btn-course:active {
+    transform: scale(0.95);
+}
+/* Estilos para a página de detalhes do curso */
+.course-detail {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.course-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-info img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.course-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.course-description h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #b19cd9;
+}
+
+.course-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-description ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.btn-signup {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #9932cc;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn-signup:hover {
+    background-color: #8a2be2;
+    transform: scale(1.05);
+}
+
+.btn-signup:active {
+    transform: scale(0.95);
+}
+/* Página Cursos */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.courses {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section.courses h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-item {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: #e0e0e0;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+}
+
+.course-item h3 {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.course-item h3 a {
+    color: #b19cd9;
+    text-decoration: none;
+}
+
+.course-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.course-item p {
+    margin: 15px;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+/* Página Sobre-Nós */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.about-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-description h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #b19cd9;
+}
+
+.about-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-description ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+/* Animações do Site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.about-us,
+section.courses,
+.course-detail {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+section.about-us img,
+.course-info img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+section.about-us img:hover,
+.course-info img:hover {
+    transform: scale(1.05);
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-item {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: #e0e0e0;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.course-item h3 a {
+    color: #b19cd9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.course-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.btn-signup {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #9932cc;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn-signup:hover {
+    background-color: #8a2be2;
+    transform: scale(1.05);
+}
+
+.btn-signup:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Termos de Uso */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.terms-of-use {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section.terms-of-use h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.terms-content h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #b19cd9;
+}
+
+.terms-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Pagina Politica de Privacidade */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.privacy-policy {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section.privacy-policy h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.privacy-content h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #b19cd9;
+}
+
+.privacy-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Página de Incrição ao Curso */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b19cd9;
+}
+
+section.course-signup {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.course-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.course-info img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+.signup-form input,
+.signup-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.signup-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.signup-form button {
+    padding: 15px 30px;
+    background-color: #9932cc;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+    background-color: #8a2be2;
+    transform: scale(1.05);
+}
+
+.signup-form button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
